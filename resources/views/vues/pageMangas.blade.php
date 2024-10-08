@@ -13,18 +13,16 @@
                     <th>Dessinateur</th>
                     <th>Scénariste</th>
                     <th>Prix</th>
-                    <th>Profil</th>
                     <th>Couverture</th>
                 </tr>
             </thead>
             @foreach($mangas as $manga)
                 <tr>
                     <td>{{ $manga->titre }} </td>
-                    <td> {{ $manga->prix }} </td>
-                    <td>{{ $manga->couverture }} </td>
-                    <td>{{ $manga->lib_genre }} </td>
+                    <td> {{ $manga->lib_genre }} </td>
                     <td>{{ $manga->nom_dessinateur }} </td>
                     <td>{{ $manga->nom_scenariste }} </td>
+                    <td>{{ $manga->prix}} </td>
                     <td class="col-xs-2">
                         <img class="img-rounded" src="{{url('/assets/images')}}/{{$manga->couverture}}"
                              style="max-height: 150px;">
